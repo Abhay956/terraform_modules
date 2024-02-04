@@ -10,7 +10,7 @@ provider "google" {
   project = "Enter_Your_Project_ID"
   region  = "us-west1"
   zone    = "us-west1-b"
-credentials = "file_name.json"
+credentials = "${file("~/terraform_modules/gcp/key.json")}"
 
 }
 
